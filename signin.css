@@ -1,0 +1,144 @@
+* {
+  font-size: 15px;
+  font-family: sans-serif;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.beaut {
+  background-color: #6a62d2;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.white {
+  background-color: #fff;
+  height: 42rem;
+  width: 42rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+/*form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 80%;
+}*/
+.white h2 {
+  margin-bottom: 3.5rem;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+form {
+  width: 30rem;
+}
+#email_input,
+#password_input {
+  width: 26rem;
+  margin-bottom: 1.4rem;
+  height: 1.6rem;
+  padding: 2rem;
+  background-color: #e5e8ed;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
+}
+
+#email_input {
+  margin-bottom: 2rem;
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 2.5rem;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.4rem;
+  width: 1.4rem;
+  background-color: #eee;
+  border-radius: 0.2rem;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #6a62d2;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 3px;
+  top: 1.5px;
+  width: 0.5rem;
+  height: 0.7rem;
+  border: solid white;
+  border-width: 0 0.1rem 0.1rem 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#sign_in {
+  width: 100%;
+  height: 5.4rem;
+  background-color: #6a62d2;
+  border: none;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 2.5rem;
+  border-radius: 0.3rem;
+  font-size: 1.5rem;
+}
+a {
+  font-size: 1.1rem;
+  text-decoration: none;
+}
